@@ -1,0 +1,149 @@
+/* Estilos para el componente Calendar */
+.react-calendar {
+  width: 100%;
+  max-width: 350px;
+  margin: 0 auto;
+  border: 1px solid #e5e7eb;
+  font-family: inherit;
+  background-color: white;
+}
+
+.calendar-header {
+  text-align: center;
+  padding: 8px 0;
+  font-weight: 500;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.calendar-title {
+  font-size: 0.95rem;
+  text-transform: capitalize;
+  color: #333;
+}
+
+.react-calendar__navigation {
+  display: flex;
+  height: 40px;
+  margin-bottom: 0;
+}
+
+.react-calendar__navigation button {
+  min-width: 44px;
+  background: none;
+  color: #333;
+}
+
+.react-calendar__navigation button:disabled {
+  background-color: #f0f0f0;
+}
+
+.react-calendar__navigation button:enabled:hover,
+.react-calendar__navigation button:enabled:focus {
+  background-color: #f0f0f0;
+}
+
+.react-calendar__month-view__weekdays {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 0.8em;
+  color: #666;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.react-calendar__month-view__weekdays__weekday {
+  padding: 10px 0;
+}
+
+.react-calendar__month-view__days__day {
+  padding: 10px 0;
+  color: #333;
+}
+
+.react-calendar__month-view__days__day--weekend {
+  color: #C1121F;
+}
+
+.react-calendar__month-view__days__day--neighboringMonth {
+  color: #bbb;
+}
+
+.react-calendar__tile {
+  max-width: 100%;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 0.9em;
+  position: relative;
+}
+
+.react-calendar__tile:enabled:hover,
+.react-calendar__tile:enabled:focus {
+  background-color: #f0f0f0;
+}
+
+.react-calendar__tile--now {
+  background-color: #f7f7f7;
+  font-weight: bold;
+}
+
+.react-calendar__tile--now:enabled:hover,
+.react-calendar__tile--now:enabled:focus {
+  background-color: #f0f0f0;
+}
+
+.react-calendar__tile--active {
+  background-color: #f0f0f0 !important;
+  color: #333 !important;
+  font-weight: bold;
+}
+
+.react-calendar__tile--active:enabled:hover,
+.react-calendar__tile--active:enabled:focus {
+  background-color: #e6e6e6 !important;
+}
+
+/* Estilo para días disponibles */
+.highlight-available {
+  background-color: #C1121F !important;
+  color: white !important;
+  border-radius: 50% !important;
+  font-weight: bold !important;
+  position: relative;
+  z-index: 1;
+}
+
+.highlight-available:hover {
+  background-color: #A30F1A !important;
+}
+
+/* Ajustes para la sección del formulario */
+.calendar-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+/* Estilos para los campos de tiempo */
+input[type="time"] {
+  appearance: none;
+}
+
+/* Estilos para los botones de navegación de calendario */
+.react-calendar__navigation__label {
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.react-calendar__navigation__arrow {
+  font-size: 1.2rem;
+}
+
+/* Ajustes para el día seleccionado */
+.react-calendar__tile--hasActive {
+  background-color: #f0f0f0;
+}
+
+.react-calendar__tile--hasActive:enabled:hover,
+.react-calendar__tile--hasActive:enabled:focus {
+  background-color: #e6e6e6;
+}
